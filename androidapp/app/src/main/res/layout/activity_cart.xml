@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".Cart">
+
+    <LinearLayout
+        android:layout_width="426dp"
+        android:layout_height="138dp"
+        android:background="#d3d3d3"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal"
+        android:gravity="top">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="134dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/hamhama" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="127dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:text="Hamhama"
+            android:textColor="#ff5e00"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Your Order:"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textCartData"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/totalPrice"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnConfirmOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Confirm Order" />
+
+    <Button
+        android:id="@+id/btnClearCart"
+        android:layout_width="156dp"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Clear Cart" />
+
+    <TextView
+        android:id="@+id/textDisDur"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Not Enough ? Wanna More ? HIT ME" />
+
+</LinearLayout>

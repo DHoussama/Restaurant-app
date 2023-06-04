@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="426dp"
+        android:layout_height="124dp"
+        android:background="#d3d3d3"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="134dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/hamhama" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="127dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:text="HamHama"
+            android:textColor="#ff5e00"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="536dp"
+        android:scrollbars="vertical">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:background="#d3d3d3"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSelectAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:text="Profile" />
+
+        <LinearLayout
+            android:layout_width="121dp"
+            android:layout_height="94dp"
+            android:layout_margin="10dp"
+            android:background="#d3d3d3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/cartImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ff5e00"
+                app:srcCompat="@drawable/shopping_cart" />
+
+            <Button
+                android:id="@+id/btnCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Cart"
+                app:srcCompat="@drawable/shopping_cart" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40" />
+
+        <Button
+            android:id="@+id/btnAllOrders"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Orders" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
